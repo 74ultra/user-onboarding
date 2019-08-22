@@ -14,7 +14,7 @@ const UserForm = ({ values, errors, touched, status }) => {
         }
     },[status]);
 
-    console.log('Status', status)
+    
     
     return (
       <div>
@@ -38,7 +38,7 @@ const UserForm = ({ values, errors, touched, status }) => {
         {users.map(user => (
            
                <div>
-                   <h3>Team Member #{user.id}</h3>
+                   <h3>Team Member: #{user.id}</h3>
                    <p>Name: {user.name}</p>
                    <p>Email: {user.email}</p>
                </div>
